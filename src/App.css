@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: white;
+  padding: 10px 50px;
+  width: 100%;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header ul li {
+  margin: 10px;
+  border: 1px solid purple;
+  padding: 5px 20px;
+  border-radius: 45px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.header ul li:hover {
+  box-shadow: 0 4px 20px black;
+  transform: rotate(3deg);
+  background-color: purple;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  color: purple;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  animation-name: ball;
+  animation-duration: 200s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ball {
+  100% {
+    transform: rotate(36000deg);
+  }
+}
+
+.welcome {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.inner-section {
+  height: 700px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.button {
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 45px;
+  font-size: 20px;
+}
+
+.button:hover {
+  border: 5px double white;
+}
+
+.world {
+  text-align: center;
+  color: white;
+  width: 90%;
+}
+
+.world p {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+}
